@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/toothbrushes.svg';
 import Header from '../../components/header/Header';
 import './Home.css';
@@ -22,7 +23,7 @@ function Home() {
         similique sint vero? Accusamus aliquam aliquid blanditiis consequatur est et minima mollitia neque non, odit perspiciatis placeat
         provident quos, similique sit totam vero. Beatae consequatur cupiditate rerum?
       </p>
-      <p>Leer hier meer over het bleken van tanden</p>
+      <p>Leer <Link to="/tanden-bleken">hier</Link> meer over het bleken van tanden</p>
     </main>
   );
 }

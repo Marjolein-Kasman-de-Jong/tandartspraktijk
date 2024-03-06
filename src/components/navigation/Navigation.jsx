@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation() {
@@ -8,10 +9,10 @@ function Navigation() {
         <h4>De Tandenborstel</h4>
 
         <ul>
-          <li>Home</li>
-          <li>Gaatjes</li>
-          <li>Afspraak maken</li>
-          <li>Tanden bleken</li>
+          <li><NavLink to="/" className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'}>Home</NavLink></li>
+          <li><NavLink to="/gaatjes" className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'}>Gaatjes</NavLink></li>
+          <li><NavLink to="/afspraken" className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'}>Afspraak maken</NavLink></li>
+          <li><NavLink to="/tanden-bleken" className={({ isActive }) => isActive ? 'active-menu-link' : 'default-menu-link'}>Tanden bleken</NavLink></li>
         </ul>
       </div>
     </nav>
